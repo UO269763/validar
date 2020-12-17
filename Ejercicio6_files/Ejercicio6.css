@@ -42,7 +42,7 @@ form input[type="submit"]{
 	border-radius:5px;
 	display:block;
 	color:#fff;
-    background-color:gray;
+    background-color: #18526e;
 } 
 form input[type="submit"]:disabled,
 form input[type="submit"][disabled]{
