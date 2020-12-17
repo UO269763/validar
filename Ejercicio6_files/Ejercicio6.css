@@ -6,21 +6,22 @@ section {
     border: 1px solid black;
     border-radius:10px;
 }
-h1{
+h1 {
     font-size:40px;
 }
-h2{
+h2 {
     font-size: 25px;
 }
 form{
 	border-radius:10px;
 	margin:auto;
-	background-color: rgb(166, 166, 214);
+	background-color: lightpink;
 }
 
 form label{
 	width:72px;
-    font-weight:bold;
+	font-weight:bold;
+	color: black;
 }
 
 form input[type="text"],
