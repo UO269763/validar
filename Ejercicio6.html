@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<!-- saved from url=(0031)http://localhost/ejercicio6.php -->
+<!-- saved from url=(0031)http://localhost/Ejercicio6.php -->
 <html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Ejercicio 6</title>
         
         <meta name="author" content="Esther González"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="./Ejercicio6_files/Ejercicio6.css" rel="stylesheet">
-    </head>   
+    <style type="text/css"></style></head>   
     <body>
         <h1>Creación de la Base de Datos de PruebasUsabilidad</h1>  
-        <label for="formulario">Formulario</label>
-        <form id="formulario" method="POST" enctype="multipart/form-data" action="http://localhost/ejercicio6.php#">
+        <form method="POST" enctype="multipart/form-data" action="http://localhost/Ejercicio6.php#">
             <section>
                 <h2>Crear base de datos</h2>
                 <p>
@@ -97,7 +96,8 @@
                 <input type="text" id="consultarpornombre" name="consultarpornombre">
                 </p>
                 <p>
-                <label>Consultar<input type="submit" id="consultardatosnombre" value="Consultar datos" name="consultardatosnombre"></label>
+                <label for="consultardatosnombre">Consultar</label>
+                <input type="submit" id="consultardatosnombre" value="Consultar datos" name="consultardatosnombre">
                 </p>
                 <br>
                 <p>
@@ -113,7 +113,8 @@
                 <input type="text" id="consultarporapellido" name="consultarporapellido">
                 </p>
                 <p>
-                <label>Consultar<input type="submit" id="consultardatosapellido" value="Consultar datos: apellido" name="consultardatosapellido"></label>
+                <label for="consultardatosapellido">Consultar</label>
+                <input type="submit" id="consultardatosapellido" value="Consultar datos: apellido" name="consultardatosapellido">
                 </p> 
                 <br>
                 <p>
@@ -125,17 +126,21 @@
             <section>
                 <h2>Modificar o borrar datos</h2>
                 <fieldset>
-                <label>Modificar datos<input type="radio" id="modificar" name="modificar" value="modificar" checked=""> </label>
+                <label for="modificar">Modificar datos</label>
+                <input type="radio" id="modificar" name="modificar" value="modificar" checked="">
                 <br>
-                <label>Borrar datos<input type="radio" id="borrar" name="modificar" value="borrar"></label>
+                <label for="borrar">Borrar datos</label>
+                <input type="radio" id="borrar" name="modificar" value="borrar">
                 </fieldset>
                 <br>
                 <p>
-                <label>Introduzca DNI<input type="text" id="consultarpordni" name="consultarpordni"></label>
+                <label for="consultarpordni">Introduzca DNI</label>
+                <input type="text" id="consultarpordni" name="consultarpordni">
                 </p>
                 <br>
                 <p>
-                <label>Buscar<input type="submit" id="buscar" value="Buscar" name="buscar"></label>
+                <label for="buscar">Buscar</label>
+                <input type="submit" id="buscar" value="Buscar" name="buscar">
                 </p>
                 <br>
                 <p>  
