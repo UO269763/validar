@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://localhost/Ejercicio7.php -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Ejercicio 7</title>
+        
+        <meta name="author" content="Esther González"> 
+        <link href="./Ejercicio7_files/Ejercicio7.css" rel="stylesheet">
+    <style type="text/css"></style></head>
+    <body>
+        <h1>Base de datos de una universidad</h1>
+        <section>
+            <h2>Aquí usted podrá consultar los datos sobre los alumnos matriculados en la universidad
+            </h2>
+            <p>Para comenzar ud. debe cargar los datos en formato .csv (separado por ;)</p>
+        </section>
+        <form method="POST" enctype="multipart/form-data" action="http://localhost/Ejercicio7.php#">
+            <section>
+                <h3>Importar los datos desde multiples ficheros</h3>
+                <p>
+                <label for="archivo">Importar (csv)</label>
+                <input type="file" multiple="multiple" id="archivo" name="archivo[]">
+                </p>
+                <p>
+                <label for="addbd">Añadir a la base de datos</label>
+                <input type="submit" id="addbd" name="addbd" value="Añadir a la BD">
+                </p>
+
+            </section>
+            <section>
+                <h3>Consultar notas del alumno</h3>
+                <p>
+                <label for="nombre">Introduzca el identificador del alumno para consultar sus notas</label>
+                <input type="text" id="nombre" name="nombre">
+                </p>
+                <p>
+                <label for="consultar">Consultar</label>
+                <input type="submit" id="consultar" name="consultar" value="Consultar">
+                </p>
+                <p>
+                <label for="nombrebyid">Nombre del alumno:</label>
+                <input type="text" id="nombrebyid" name="nombrebyid" readonly="" value="">
+                <label for="sexobyid">Sexo:</label>
+                <input type="text" id="sexobyid" name="sexobyid" readonly="" value="">
+                <label for="emailbyid">Email:</label>
+                <input type="text" id="emailbyid" name="emailbyid" readonly="" value="">
+                </p>
+                <p>
+                <label for="nombrebyid">Carrera cursada:</label>
+                <textarea id="carrera" name="carrera" readonly=""></textarea>
+                </p>
+                <p>
+                <label for="notas">Notas:</label>
+                <textarea name="notas" id="notas" readonly=""></textarea>
+                </p>
+
+            </section>
+           
+
+        </form>
+
+
+    
+ 
+
+
+
+</body></html>

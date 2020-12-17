@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://localhost/Ejercicio6.php -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Ejercicio 6</title>
+        
+        <meta name="author" content="Esther González"> 
+        <link href="./Ejercicio6_files/Ejercicio6.css" rel="stylesheet">
+    <style type="text/css"></style></head>   
+    <body>
+        <h1>Creación de la Base de Datos de PruebasUsabilidad</h1>  
+        <form method="POST" enctype="multipart/form-data" action="http://localhost/Ejercicio6.php#">
+            <section>
+                <h2>Crear base de datos</h2>
+                <p>
+                <label for="crear">Crear base de datos</label>
+                <input type="submit" id="crear" value="Crear Base de Datos" name="crear">
+                </p><p>
+            </p></section>
+            <section>
+                <h2>Crear la tabla PruebasUsabilidad en la base de datos</h2>
+                <p>
+                <label for="creartabla">Crear tabla: PruebasUsabilidad</label>
+                <input type="submit" id="creartabla" value="Crear" name="creartabla">
+                </p>
+            </section> 
+           <section> 
+                <h2>Insertar datos en la tabla PruebasUsabilidad</h2>
+                <p>
+                <label for="id">DNI</label>
+                <input type="text" id="id" name="id">
+                </p>
+                <p>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre">
+                </p>
+                <p>
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos">
+                </p>
+                <p>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+                </p>
+                <p>
+                <label for="tlfn">Teléfono</label>
+                <input type="text" id="tlfn" name="tlfn">
+                </p>
+                <p>
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" name="edad">
+                </p>
+                <p>
+                <label for="sexo">Sexo</label>
+                <select name="sexo" id="sexo">
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                </select>
+                </p>
+                <p>
+                <label for="nivelinfor">Nivel informático (0-10)</label>
+                <input type="number" id="nivelinfor" name="nivelinfor" min="0" max="10">
+                </p>
+                <p>
+                <label for="tiempo">Tiempo empleado (en segundos)</label>
+                <input type="number" id="tiempo" name="tiempo">
+                </p>
+                <p>
+                <label for="correcto">¿Ha realizado correctamente la tarea?</label>
+                <select name="correcto" id="correcto">
+                    <option value="si">Si</option>
+                    <option value="no">No</option>
+                </select>
+                </p>
+                <p>
+                <label for="comentarios">Problemas encontrados (opcional)</label>
+                <input type="text" id="comentarios" name="comentarios">
+                </p>
+                <p>
+                <label for="mejoras">Mejoras propuestas (opcional)</label>
+                <input type="text" id="mejoras" name="mejoras">
+                </p>
+                <p>
+                <label for="valoracion">Valoración del usuario (0-10)</label>
+                <input type="number" id="valoracion" name="valoracion" min="0" max="10">
+                </p>
+                <p>
+                <label for="insertardatos">Insertar datos</label>
+                <input type="submit" id="insertardatos" value="Insertar datos" name="insertardatos">                
+                </p>
+            </section>
+            <section>
+                <h2>Consultar los datos según el nombre</h2>
+                <p>
+                <label for="consultarpornombre">Nombre</label>
+                <input type="text" id="consultarpornombre" name="consultarpornombre">
+                </p>
+                <p>
+                <label>Consultar<input type="submit" id="consultardatosnombre" value="Consultar datos" name="consultardatosnombre"></label>
+                </p>
+                <br>
+                <p>
+                <label for="consultarxnombre">Los datos aparecerán en esta lista</label>
+                <textarea name="consultarxnombre" id="consultarxnombre" readonly=""> </textarea>
+                </p>
+
+            </section>
+            <section>
+                <h2>Consultar los datos según el apellido</h2>
+                <p>
+                <label for="consultarporapellido">Apellido(s)</label>
+                <input type="text" id="consultarporapellido" name="consultarporapellido">
+                </p>
+                <p>
+                <label>Consultar<input type="submit" id="consultardatosapellido" value="Consultar datos: apellido" name="consultardatosapellido"></label>
+                </p> 
+                <br>
+                <p>
+                <label for="consultarxapellido">Los datos aparecerán en esta lista</label>
+                <textarea name="consultarxapellido" id="consultarxapellido" readonly=""> </textarea>
+                </p>
+            </section>  
+            
+            <section>
+                <h2>Modificar o borrar datos</h2>
+                <p>
+                <label>Modificar datos<input type="radio" id="modificar" name="modificar" value="modificar" checked=""> </label>
+                <br>
+                <label>Borrar datos<input type="radio" id="borrar" name="modificar" value="borrar"></label>
+                </p>
+                <br>
+                <p>
+                <label>Introduzca DNI<input type="text" id="consultarpordni" name="consultarpordni"></label>
+                </p>
+                <br>
+                <p>
+                <label>Buscar<input type="submit" id="buscar" value="Buscar" name="buscar"></label>
+                </p>
+                <br>
+                <p>  
+                <label for="id1">DNI</label>
+                <input type="text" id="id1" name="id1" readonly="" value="">
+                </p>
+                <p>
+                <label for="nombre1">Nombre</label>
+                <input type="text" id="nombre1" name="nombre1" disabled="" value="">
+                </p>
+                <p>
+                <label for="apellidos1">Apellidos</label>
+                <input type="text" id="apellidos1" name="apellidos1" disabled="" value="">
+                </p>
+                <p>
+                <label for="email1">Email</label>
+                <input type="text" id="email1" name="email1" disabled="" value="">
+                </p>
+                <p>
+                <label for="tlfn1">Teléfono</label>
+                <input type="text" id="tlfn1" name="tlfn1" disabled="" value="">
+                </p>
+                <p>
+                <label for="edad1">Edad</label>
+                <input type="number" id="edad1" name="edad1" disabled="" value="">
+                </p>
+                <p>
+                <label for="sexo1">Sexo</label>
+                <select name="sexo1" id="sexo1" disabled="">
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                </select>
+                </p>
+                <p>
+                <label for="nivelinfor1">Nivel informático (0-10)</label>
+                <input type="number" id="nivelinfor1" name="nivelinfor1" min="0" max="10" disabled="" value="">
+                </p>
+                <p>
+                <label for="tiempo1">Tiempo empleado (en segundos)</label>
+                <input type="number" id="tiempo1" name="tiempo1" disabled="" value="">
+                </p>
+                <p>
+                <label for="correcto1">¿Ha realizado correctamente la tarea?</label>
+                <select name="correcto1" id="correcto1" disabled="">
+                    <option value="si">Si</option>
+                    <option value="no">No</option>
+                </select>
+                </p>
+                <p>
+                <label for="comentarios1">Problemas encontrados (opcional)</label>
+                <input type="text" id="comentarios1" name="comentarios1" disabled="" value="">
+                </p>
+                <p>
+                <label for="mejoras1">Mejoras propuestas (opcional)</label>
+                <input type="text" id="mejoras1" name="mejoras1" disabled="" value="">
+                </p>
+                <p>
+                <label for="valoracion1">Valoracion (0-10)</label>
+                <input type="number" id="valoracion1" name="valoracion1" min="0" max="10" disabled="" value="">
+                </p>
+                <p>
+                <label for="modificardatos">Guardar datos actualizados</label>
+                <input type="submit" id="modificardatos" value="Guardar cambios" name="modificardatos" disabled="">
+                </p>
+                <p>
+                <label for="borrardatos">Borrar datos</label>
+                <input type="submit" id="borrardatos" value="Borrar datos" name="borrardatos" disabled="">
+                </p>
+                 
+            </section>
+            <section>
+                <h2>Generar informe con el resumen de las tablas</h2>
+                <p>
+                <label for="informe">Informe tablas</label>
+                <input type="submit" id="informe" name="informe" value="Informe"> 
+                </p>
+                <p>
+                <label for="edadmedia">Edad media</label>
+                <input type="text" id="edadmedia" name="edadmedia" value="" readonly="">
+                </p>
+                <p>
+                <label for="frecuenciaf">Frecuencia de sexo femenino</label>
+                <input type="text" id="frecuenciaf" name="frecuenciaf" value="" readonly="">
+                </p>
+                <p>
+                <label for="frecuenciam">Frecuencia de sexo masculino</label>
+                <input type="text" id="frecuenciam" name="frecuenciam" value="" readonly="">
+                </p>
+                <p>
+                <label for="mediainformatica">Valor medio del nivel o pericia informática de los usarios</label>
+                <input type="text" id="mediainformatica" name="mediainformatica" value="" readonly="">
+                </p>
+                <p>
+                <label for="tiempoempleado">Tiempo medio empleado (en segundos)</label>
+                <input type="text" id="tiempoempleado" name="tiempoempleado" value="" readonly="">
+                </p>
+                <p>
+                <label for="porcentajecorrecto">Porcentaje de usuarios que han realizado la tarea correctamente</label>
+                <input type="text" id="porcentajecorrecto" name="porcentajecorrecto" value="" readonly="">
+                </p>
+                <p>
+                <label for="medianota">Valor medio de la puntuación de los usuarios</label>
+                <input type="text" id="medianota" name="medianota" value="" readonly="">
+                </p>
+                </section>
+            <section>
+                <h2>Exportar a formato .csv</h2>
+                <p>
+                <label for="exportar">Exportar a pruebasUsabilidad.csv</label>
+                <input type="submit" id="exportar" name="exportar" value="Exportar">
+                </p>
+            </section>
+            <section>
+                <h2>Importar desde fichero .csv</h2>
+                <p>
+                <label for="archivo">Importar (csv)</label>
+                <input type="file" id="archivo" name="archivo">
+                </p>
+                <p>
+                <label for="addbd">Añadir a la base de datos</label>
+                <input type="submit" id="addbd" name="addbd" value="Añadir a la BD">
+                </p>
+                </section>
+               
+            
+        </form>
+    
+    
+</body></html>
