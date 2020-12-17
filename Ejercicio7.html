@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<!-- saved from url=(0031)http://localhost/Ejercicio7.php -->
-<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="es"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <title>Ejercicio 7</title>
-        
+        <meta charset="utf-8">
         <meta name="author" content="Esther González"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="./Ejercicio7_files/Ejercicio7.css" rel="stylesheet">
-    <style type="text/css"></style></head>
+        <link href="Ejercicio7_files/Ejercicio7.css" rel="stylesheet">
+    </head>
     <body>
         <h1>Base de datos de una universidad</h1>
         <section>
@@ -14,10 +14,11 @@
             </h2>
             <p>Para comenzar ud. debe cargar los datos en formato .csv (separado por ;)</p>
         </section>
-        <label for="formulario">Formulario</label>
-        <form method="POST" enctype="multipart/form-data" action="http://localhost/Ejercicio7.php#">
+        <form method="POST" enctype="multipart/form-data" action="#">
             <section>
-                <h3>Importar los datos desde multiples ficheros</h3>
+                <h3>Importar los datos desde 4 ficheros</h3>
+                <p>Por favor, recuerde que si no proporciona los 4 archivos necesarios la aplicación no funcionará correctamente</p>
+                <p>Los archivos necesarios son: cargaAlumnos.csv, cargaAlumnosMaterias.csv, cargaAsignaturas.csv y cargarAsignaturas.csv</p>
                 <p>
                 <label for="archivo">Importar (csv)</label>
                 <input type="file" multiple="multiple" id="archivo" name="archivo[]">
@@ -40,19 +41,32 @@
                 </p>
                 <p>
                 <label for="nombrebyid">Nombre del alumno:</label>
-                <input type="text" id="nombrebyid" name="nombrebyid" readonly="" value="">
+                <input type="text" id="nombrebyid" name="nombrebyid" readonly="readonly" value="Esther Gonzalez">
                 <label for="sexobyid">Sexo:</label>
-                <input type="text" id="sexobyid" name="sexobyid" readonly="" value="">
+                <input type="text" id="sexobyid" name="sexobyid" readonly="readonly" value="fe">
                 <label for="emailbyid">Email:</label>
-                <input type="text" id="emailbyid" name="emailbyid" readonly="" value="">
+                <input type="text" id="emailbyid" name="emailbyid" readonly="readonly" value="esther@gmail.com">
                 </p>
                 <p>
                 <label for="nombrebyid">Carrera cursada:</label>
-                <textarea id="carrera" name="carrera" readonly=""></textarea>
+                <textarea id="carrera" name="carrera" readonly="readonly">Ingenieria Informatica
+</textarea>
                 </p>
                 <p>
                 <label for="notas">Notas:</label>
-                <textarea name="notas" id="notas" readonly=""></textarea>
+                <textarea name="notas" id="notas" readonly="readonly">1 - ASIGNATURA = Bases de datos
+ NOTA = 8
+
+2 - ASIGNATURA = Repositorios de Información
+ NOTA = 8
+
+3 - ASIGNATURA = Metodologia de la Programacion
+ NOTA = 8
+
+4 - ASIGNATURA = Algoritmia
+ NOTA = 8
+
+</textarea>
                 </p>
 
             </section>
