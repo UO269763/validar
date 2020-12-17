@@ -9,7 +9,8 @@
     <style type="text/css"></style></head>   
     <body>
         <h1>Creación de la Base de Datos de PruebasUsabilidad</h1>  
-        <form method="POST" enctype="multipart/form-data" action="http://localhost/Ejercicio6.php#">
+        <label for="formulario">Formulario</label>
+        <form id="formulario" method="POST" enctype="multipart/form-data" action="http://localhost/Ejercicio6.php#">
             <section>
                 <h2>Crear base de datos</h2>
                 <p>
@@ -123,11 +124,11 @@
             
             <section>
                 <h2>Modificar o borrar datos</h2>
-                <p>
+                <fieldset>
                 <label>Modificar datos<input type="radio" id="modificar" name="modificar" value="modificar" checked=""> </label>
                 <br>
                 <label>Borrar datos<input type="radio" id="borrar" name="modificar" value="borrar"></label>
-                </p>
+                </fieldset>
                 <br>
                 <p>
                 <label>Introduzca DNI<input type="text" id="consultarpordni" name="consultarpordni"></label>
