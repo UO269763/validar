@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="es"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!-- saved from url=(0031)http://localhost/Ejercicio7.php -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Ejercicio 7</title>
-        <meta charset="utf-8">
+        
         <meta name="author" content="Esther González"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="Ejercicio7_files/Ejercicio7.css" rel="stylesheet">
-    </head>
+        <link href="./Ejercicio7_files/Ejercicio7.css" rel="stylesheet">
+    <style type="text/css"></style></head>
     <body>
         <h1>Base de datos de una universidad</h1>
         <section>
@@ -14,7 +14,7 @@
             </h2>
             <p>Para comenzar ud. debe cargar los datos en formato .csv (separado por ;)</p>
         </section>
-        <form method="POST" enctype="multipart/form-data" action="#">
+        <form method="POST" enctype="multipart/form-data" action="http://localhost/Ejercicio7.php#">
             <section>
                 <h3>Importar los datos desde 4 ficheros</h3>
                 <p>Por favor, recuerde que si no proporciona los 4 archivos necesarios la aplicación no funcionará correctamente</p>
@@ -41,19 +41,19 @@
                 </p>
                 <p>
                 <label for="nombrebyid">Nombre del alumno:</label>
-                <input type="text" id="nombrebyid" name="nombrebyid" readonly="readonly">
+                <input type="text" id="nombrebyid" name="nombrebyid" readonly="" value="">
                 <label for="sexobyid">Sexo:</label>
-                <input type="text" id="sexobyid" name="sexobyid" readonly="readonly">
+                <input type="text" id="sexobyid" name="sexobyid" readonly="" value="">
                 <label for="emailbyid">Email:</label>
-                <input type="text" id="emailbyid" name="emailbyid" readonly="readonly">
+                <input type="text" id="emailbyid" name="emailbyid" readonly="" value="">
                 </p>
                 <p>
                 <label for="carrera">Carrera cursada:</label>
-                <textarea id="carrera" name="carrera" readonly="readonly"></textarea>
+                <textarea id="carrera" name="carrera" readonly=""></textarea>
                 </p>
                 <p>
                 <label for="notas">Notas:</label>
-                <textarea name="notas" id="notas" readonly="readonly"></textarea>
+                <textarea name="notas" id="notas" readonly=""></textarea>
                 </p>
 
             </section>
